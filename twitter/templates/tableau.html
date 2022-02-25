@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+ <script src="https://cdn.tailwindcss.com"></script>
+
+<menu type="context" id="les-autres-pages">
+  <menuitem><a href ="/network">* Graph Network *</a></menuitem> <br>
+     <menuitem><a href ="/tableau">* Le Tableau des Tweets *</a></menuitem> <br>
+     <menuitem><a href ="/wordcloud">* Graph WordCloud *</a></menuitem> <br>
+
+</menu>
+
+
+
+<table>
+ <tr>
+   <th>Texte</th>
+ </tr>
+
+   {% for doc in docs %}
+   <tr class="border">
+           <td>{{doc.text}}</td>
+   </tr>
+{% endfor %}
+
+
+</table>
+
+</body>
+</html>
